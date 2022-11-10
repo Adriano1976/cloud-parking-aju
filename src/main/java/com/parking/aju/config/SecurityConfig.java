@@ -10,12 +10,21 @@ import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
+/**
+ * Classe responsável por centralizar toda a configuração de seguranaça da API com
+ * os dados do usuário, ‘login’ e senha pré-definido.
+ */
 @Configuration
 @EnableWebSecurity
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
+    /**
+     * Método responsável por configurar e armazenar os dados de acesso do usuáro.
+     *
+     * @param auth Recebe os dados do ‘login’, senha e usuário já pré-definido.
+     * @throws Exception Retorna uma mensagem de erro.
+     */
     @Override
-    //Configurar o login do usuario
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth.inMemoryAuthentication()
                 .withUser("user")
@@ -25,6 +34,13 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .passwordEncoder(passwordEncoder());
     }
 
+    /**
+     * Método responsável pelo controle e configuração de autorização do acesso após
+     * a validação do ‘login’ do usuário.
+     *
+     * @param http Recebe os dados a ser autenticado.
+     * @throws Exception Retorna uma mensagem de erro.
+     */
     @Override
     //Configura a autorização
     protected void configure(HttpSecurity http) throws Exception {
@@ -45,6 +61,11 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
     }
 
+    /**
+     * Método responsável por criptograr a senha do usuário.
+     *
+     * @return Retorna a senha criptografada.
+     */
     @Bean
     public PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();

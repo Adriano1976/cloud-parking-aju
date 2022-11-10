@@ -1,5 +1,8 @@
 package com.parking.aju.controller.dto;
 
+/**
+ * Classe responsável em controlar e receber dados expecídificos na base de dados.
+ */
 public class ParkingCreateDTO {
 
     private String license;

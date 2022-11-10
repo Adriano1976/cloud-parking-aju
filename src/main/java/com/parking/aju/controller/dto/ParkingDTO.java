@@ -5,6 +5,10 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 
 import java.time.LocalDateTime;
 
+/**
+ * Classe responsável em controlar e manipular os dados entre a classe modelo da base de dados
+ * e o usuário.
+ */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class ParkingDTO {
 

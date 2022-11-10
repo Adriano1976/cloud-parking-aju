@@ -26,10 +26,10 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 /**
  * Classe responsável por habilitar o Swagger na aplicação.
  * <p>
- * A anotação @Component — Responsavel em informar que essa classe faz parte do servico do Spring.
- * A anotação @Configuration — Responsavel em informar ao Spring que essa classe é uma configuração do Swagger..
- * A anotação @EnableSwagger2 — Responsavel em informar ao Spring para ativar o Swagger.
- * A anotação @EnableWebMvc — Responsável por habilitar o processo MVC.
+ * A anotação {@link Component} — Responsavel em informar que essa classe faz parte do servico do Spring.
+ * A anotação {@link Configuration} — Responsavel em informar ao Spring que essa classe é uma configuração do Swagger..
+ * A anotação {@link EnableSwagger2} — Responsavel em informar ao Spring para ativar o Swagger.
+ * A anotação {@link EnableWebMvc} — Responsável por habilitar o processo MVC.
  *
  * @author Adriano Santos
  */
@@ -88,6 +88,11 @@ public class SwaggerConfig implements WebMvcConfigurer {
         return new SecurityReference("basicAuth", new AuthorizationScope[0]);
     }
 
+    /**
+     * Metodo responsável por controlar, configurar e adicionar algumas informacoes da api.
+     *
+     * @return Retorna as informacoes da api.
+     */
     private ApiInfo getApiInfo() {
         return new ApiInfoBuilder()
                 .title("Parking Aju REST API")

@@ -5,6 +5,10 @@ import com.parking.aju.model.ParkingModel;
 import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
 
+/**
+ * Classe Responsável pelo serviço de receber os dados da data e hora de permanência do veículo no
+ * estacionamento e calcular o valor a ser pago pelo cliente.
+ */
 public class ParkingCheckOut {
 
     public static final int ONE_HOUR = 60;
@@ -13,10 +17,23 @@ public class ParkingCheckOut {
     public static final double ADDITIONAL_PER_HOUR_VALUE = 2.00;
     public static final double DAY_VALUE = 20.00;
 
+    /**
+     * Método responsável por receber os dados do dia e horário de entrada e saído do veículo.
+     *
+     * @param parking Recebe as datas e horas de entrada e saída do veículo.
+     * @return Retorna o valor já calculado.
+     */
     public static Double getBill(ParkingModel parking) {
         return getCalculatedBill(parking.getEntryDate(), parking.getExitDate());
     }
 
+    /**
+     * Método responsável por receber os dados de entrada e saída do cliente e calcular o valor do serviço.
+     *
+     * @param entryDate Recebe os dados da data e horário de entrada.
+     * @param exitDate Recebe os dados da data e horário de saída.
+     * @return Retorna o valor calculado.
+     */
     private static Double getCalculatedBill(LocalDateTime entryDate, LocalDateTime exitDate) {
 
         long minutes = entryDate.until(exitDate, ChronoUnit.MINUTES);

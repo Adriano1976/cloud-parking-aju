@@ -5,6 +5,20 @@ import java.io.Serial;
 import java.io.Serializable;
 import java.time.LocalDateTime;
 
+/*
+Pode forçar o Hibernate a citar um identificador no SQL gerado, anexando o nome da tabela
+ou coluna em backticks no documento de mapeamento. Enquanto tradicionalmente, o Hibernate usava
+backticks para escapar das palavras-chave reservadas do SQL, o JPA usa aspas duplas.
+
+Depois que as palavras-chave reservadas forem escapadas, o Hibernate usará o estilo de cotação
+correto para o SQL Dialect. Geralmente, são aspas duplas, mas o SQL Server usa colchetes e o
+MySQL usa backticks.
+**/
+
+/**
+ * Classe responsável por receber os dados do carro usuário e servir como
+ * modelo da entidade na criação da tabela na base de dados.
+ */
 @Entity
 @Table(name = "tab_parking")
 public class ParkingModel implements Serializable {
@@ -30,9 +44,19 @@ public class ParkingModel implements Serializable {
     @Column(name = "bill", length = 10)
     private Double bill;
 
+    /**
+     * Construtor sem parâmetro.
+     */
     public ParkingModel() {
     }
 
+    /**
+     * @param id Recebe o número do código de identificação.
+     * @param license Recebe os dados da placa do corro do cliente.
+     * @param state Recebe a sigla do estado do carro do cliente.
+     * @param model Recebe o nome do modelo do carro do cliente.
+     * @param color Recebe o nome da cor do carro do cliente.
+     */
     public ParkingModel(String id, String license, String state, String model, String color) {
         this.id = id;
         this.license = license;
