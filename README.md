@@ -37,6 +37,7 @@ Tratamento de exceções.
 
 # Documentação Navegável JavaDoc
 
+Javadoc é um gerador de documentação criado pela Sun Microsystems para documentar a API dos programas em Java, a partir do código-fonte. O resultado é expresso em HTML. É constituído, basicamente, por algumas marcações muitos simples inseridas nos comentários do programa. Portanto, é uma ferramenta para a criação de documentação de pacotes, classes, atributos e métodos Java a partir do processamento do código fonte com comentários em formato adequado onde é possível navegar de um documento para outro de forma a ajudar em compreender a relação entre as classes e métodos.
 Caso queira navegar e conhecer a extrutura do projeto, basta usar os recursos disponíveis pelo java doc por meio do link disponibilizado para que você posso já ter uma experiência com o projeto antes mesmo de instalar em sua máquina.
 
 ![api-gestao-do-estacionamento-javadoc](https://user-images.githubusercontent.com/17755195/201375859-5b1ccf8b-9293-4a1b-8ef3-fff5b161b1f6.png)
@@ -45,7 +46,7 @@ Caso queira navegar e conhecer a extrutura do projeto, basta usar os recursos di
 
 # Spring Rest API Swagger
 
-Api para testar operações de CRUD comuns em APIs REST que pode ser consumida por qualquer pessoa via heroku, pelo link abaixo ou executando no seu prório PC.
+O Swagger é um framework composto por diversas ferramentas que, independente da linguagem, auxilia a descrição, consumo e visualização de serviços de uma API REST. Em suma, o Swagger visa padronizar este tipo de integração, descrevendo os recursos que uma API deve possuir, como endpoints, dados recebidos, dados retornados, códigos HTTP e métodos de autenticação, entre outros. Portanto nessa Api podemos testar as operações de CRUD comuns em APIs REST que pode ser consumida por qualquer pessoa via heroku pelo link abaixo,  enquanto durar a sua hospedagem, ou executando no seu prório PC.
 
 ![api-gestao-de-estacionamento-swagger](https://user-images.githubusercontent.com/17755195/201376133-bfa405db-6fef-4f17-a901-4794033ffc1a.png)
 
@@ -55,6 +56,8 @@ Api para testar operações de CRUD comuns em APIs REST que pode ser consumida p
 
 * Spring Boot
 * Spring Boot Data JPA
+* Spring Devtools
+* Spring Security
 * Apache Tomcat
 * Maven
 * JUnit 5
@@ -63,6 +66,7 @@ Api para testar operações de CRUD comuns em APIs REST que pode ser consumida p
 * PostgreSQL
 * Open API - Swagger
 * Heroku
+* Intellij IDE
 
 ## Autor do Projeto
 
