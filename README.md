@@ -6,6 +6,8 @@ Durante a sua construção, pois possível criar as principais funções básica
 
 Para concluir, nesse projeto tive que fazer algumas adaptações durante a sua construção devido as atualizações das dependências e plug-ins, como também as diferenças existente na IDE Intellij. Mas mesmo assim, conseguir fazer com que as aplicações funcionasse da mesmo forma aplicando os conhecimentos adquiridos durante o bootcamp e outras fontes. Portanto, gostaria de agradescer por encontrar pessoas tão capacitadas que usam seus conhecimentos e experiência para compartilhar com aqueles que desejam aprender e entrar nesse mercado tão amplo e democrático.
 
+![api-gestao-de-estacionamento-intellij-ide](https://user-images.githubusercontent.com/17755195/201702013-8fcbc1df-ad89-4299-b166-9a9f0b198c7a.png)
+
 ## Objetivos
 
 Criar projeto Spring Boot Java.
