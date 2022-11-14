@@ -53,7 +53,7 @@ Tratamento de exceções.
 
 ![cloud_parking_aju - Dependency](https://user-images.githubusercontent.com/17755195/201374995-10212a58-a258-41bc-9688-4ad85460a6b7.png)
 
-# Documentação Navegável JavaDoc
+## Documentação Navegável JavaDoc
 
 Javadoc é um gerador de documentação criado pela Sun Microsystems para documentar a API dos programas em Java, a partir do código-fonte. O resultado é expresso em HTML. É constituído, basicamente, por algumas marcações muitos simples inseridas nos comentários do programa. Portanto, é uma ferramenta para a criação de documentação de pacotes, classes, atributos e métodos Java a partir do processamento do código fonte com comentários em formato adequado onde é possível navegar de um documento para outro de forma a ajudar em compreender a relação entre as classes e métodos.
 Caso queira navegar e conhecer a extrutura do projeto, basta usar os recursos disponíveis pelo java doc por meio do link disponibilizado para que você posso já ter uma experiência com o projeto antes mesmo de instalar em sua máquina.
@@ -62,7 +62,7 @@ Caso queira navegar e conhecer a extrutura do projeto, basta usar os recursos di
 
 * https://adriano1976.github.io/gestao-de-estacionamento-javadoc/index.html
 
-# Spring Rest API Swagger
+## Spring Rest API Swagger
 
 O Swagger é um framework composto por diversas ferramentas que, independente da linguagem, auxilia a descrição, consumo e visualização de serviços de uma API REST. Em suma, o Swagger visa padronizar este tipo de integração, descrevendo os recursos que uma API deve possuir, como endpoints, dados recebidos, dados retornados, códigos HTTP e métodos de autenticação, entre outros. Portanto nessa Api podemos testar as operações de CRUD comuns em APIs REST que pode ser consumida por qualquer pessoa via heroku pelo link abaixo,  enquanto durar a sua hospedagem, ou executando no seu prório PC.
 
@@ -72,7 +72,9 @@ O Swagger é um framework composto por diversas ferramentas que, independente da
 
 ## Como Realizar o Teste
 
-* ETAPA 1 - GET/parking Find all parkings 
+### ETAPA 1 - GET/parking Find all parkings 
+
+* https://cloud-parking-aju.herokuapp.com/swagger-ui.html#/Parking%20Controller/findAllUsingGET
 
 ```bash
 [
@@ -87,7 +89,9 @@ O Swagger é um framework composto por diversas ferramentas que, independente da
 ]
 ```
 
-* ETAPA 2 - POST/parking create
+### ETAPA 2 - POST/parking create
+
+* https://cloud-parking-aju.herokuapp.com/swagger-ui.html#/Parking%20Controller/createUsingPOST
 
 ```bash
 {
@@ -98,35 +102,17 @@ O Swagger é um framework composto por diversas ferramentas que, independente da
 }
 ```
 
-Response body:
+### ETAPA 3 - GET/parking/{id} findById
 
-{
-  "id": "a46e42962ae547bdb4b7470543b5b6b6",
-  "license": "JFZ-0547",
-  "state": "BH",
-  "model": "Vectra",
-  "color": "Preto",
-  "entryDate": "14/11/2022 19:15:41"
-}
-
-* ETAPA 3 - GET/parking/{id} findById
+* https://cloud-parking-aju.herokuapp.com/swagger-ui.html#/Parking%20Controller/findByIdUsingGET
 
 ```bash
 id: a46e42962ae547bdb4b7470543b5b6b6
 ```
 
-Response body
+### ETAPA 4 - PUT/parking/{id} update
 
-{
-  "id": "a46e42962ae547bdb4b7470543b5b6b6",
-  "license": "JFZ-0547",
-  "state": "BH",
-  "model": "Vectra",
-  "color": "Preto",
-  "entryDate": "14/11/2022 19:15:41"
-}
-
-* ETAPA 4 - PUT/parking/{id} update
+* https://cloud-parking-aju.herokuapp.com/swagger-ui.html#/Parking%20Controller/updateUsingPUT
 
 ```bash
 id: a46e42962ae547bdb4b7470543b5b6b6
@@ -139,37 +125,17 @@ id: a46e42962ae547bdb4b7470543b5b6b6
 }
 ```
 
-Response body
+### ETAPA 5 - POST/parking/{id} checkOut
 
-{
-  "id": "a46e42962ae547bdb4b7470543b5b6b6",
-  "license": "HTR-5047",
-  "state": "BH",
-  "model": "Vectra",
-  "color": "Verde",
-  "entryDate": "14/11/2022 19:15:41"
-}
-
-* ETAPA 5 - POST/parking/{id} checkOut
+* https://cloud-parking-aju.herokuapp.com/swagger-ui.html#/Parking%20Controller/checkOutUsingPOST
 
 ```bash
 id: a46e42962ae547bdb4b7470543b5b6b6
 ```
 
-Response body:
-
-{
-  "id": "a46e42962ae547bdb4b7470543b5b6b6",
-  "license": "HTR-5047",
-  "state": "BH",
-  "model": "Vectra",
-  "color": "Verde",
-  "entryDate": "14/11/2022 19:15:41",
-  "exitDate": "14/11/2022 19:31:25",
-  "bill": 5
-}
-
- * ETAPA 6 - DELETE/parking/{id} delete
+ ### ETAPA 6 - DELETE/parking/{id} delete
+ 
+ * https://cloud-parking-aju.herokuapp.com/swagger-ui.html#/Parking%20Controller/deleteUsingDELETE
  
 ```bash
 id: a46e42962ae547bdb4b7470543b5b6b6
@@ -177,5 +143,5 @@ id: a46e42962ae547bdb4b7470543b5b6b6
 
 ## Autor do Projeto
 
-* <p dir="auto"><li><a href="https://github.com/Adriano1976">Adriano Santos</a></li></p>
+* <p dir="auto"><a href="https://github.com/Adriano1976">Adriano Santos</a></p>
 * <p dir="auto"><a href="https://api.whatsapp.com/send?phone=5579998960414" rel="nofollow">(79) 99896-0414</a></p>
