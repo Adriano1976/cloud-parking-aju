@@ -18,6 +18,22 @@ Povoar o banco de dados usando Swagger.
 CRUD - Create, Retrieve, Update, Delete e outros.
 Tratamento de exceções.
 
+## Ferramentas
+
+* Spring Boot
+* Spring Boot Data JPA
+* Spring Devtools
+* Spring Security
+* Apache Tomcat
+* Maven
+* JUnit 5
+* Hibernate
+* JPA Mapping
+* PostgreSQL
+* Open API - Swagger
+* Heroku
+* Intellij IDE
+
 ## Estrutura do Projeto
 
 * config - configuração e beans manuais do projeto como Security e Open API - Swagger
@@ -54,21 +70,110 @@ O Swagger é um framework composto por diversas ferramentas que, independente da
 
 * https://cloud-parking-aju.herokuapp.com/swagger-ui.html#/Parking_Controller
 
-## Ferramentas
+## Como Realizar o Teste
 
-* Spring Boot
-* Spring Boot Data JPA
-* Spring Devtools
-* Spring Security
-* Apache Tomcat
-* Maven
-* JUnit 5
-* Hibernate
-* JPA Mapping
-* PostgreSQL
-* Open API - Swagger
-* Heroku
-* Intellij IDE
+* ETAPA 1 - GET/parking Find all parkings 
+
+```bash
+[
+  {
+    "id": "a46e42962ae547bdb4b7470543b5b6b6",
+    "license": "JFZ-0547",
+    "state": "BH",
+    "model": "Vectra",
+    "color": "Preto",
+    "entryDate": "14/11/2022 19:15:41"
+  }
+]
+```
+
+* ETAPA 2 - POST/parking create
+
+```bash
+{
+  "color": "Preto",
+  "license": "JFZ-0547",
+  "model": "Vectra",
+  "state": "BH"
+}
+```
+
+Response body:
+
+{
+  "id": "a46e42962ae547bdb4b7470543b5b6b6",
+  "license": "JFZ-0547",
+  "state": "BH",
+  "model": "Vectra",
+  "color": "Preto",
+  "entryDate": "14/11/2022 19:15:41"
+}
+
+* ETAPA 3 - GET/parking/{id} findById
+
+```bash
+id: a46e42962ae547bdb4b7470543b5b6b6
+```
+
+Response body
+
+{
+  "id": "a46e42962ae547bdb4b7470543b5b6b6",
+  "license": "JFZ-0547",
+  "state": "BH",
+  "model": "Vectra",
+  "color": "Preto",
+  "entryDate": "14/11/2022 19:15:41"
+}
+
+* ETAPA 4 - PUT/parking/{id} update
+
+```bash
+id: a46e42962ae547bdb4b7470543b5b6b6
+
+{
+  "color": "Verde",
+  "license": "HTR-5047",
+  "model": "Vectra",
+  "state": "BH"
+}
+```
+
+Response body
+
+{
+  "id": "a46e42962ae547bdb4b7470543b5b6b6",
+  "license": "HTR-5047",
+  "state": "BH",
+  "model": "Vectra",
+  "color": "Verde",
+  "entryDate": "14/11/2022 19:15:41"
+}
+
+* ETAPA 5 - POST/parking/{id} checkOut
+
+```bash
+id: a46e42962ae547bdb4b7470543b5b6b6
+```
+
+Response body:
+
+{
+  "id": "a46e42962ae547bdb4b7470543b5b6b6",
+  "license": "HTR-5047",
+  "state": "BH",
+  "model": "Vectra",
+  "color": "Verde",
+  "entryDate": "14/11/2022 19:15:41",
+  "exitDate": "14/11/2022 19:31:25",
+  "bill": 5
+}
+
+ * ETAPA 6 - DELETE/parking/{id} delete
+ 
+```bash
+id: a46e42962ae547bdb4b7470543b5b6b6
+```
 
 ## Autor do Projeto
 
