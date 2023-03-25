@@ -34,6 +34,42 @@ Tratamento de exceções.
 * Heroku
 * Intellij IDE
 
+## Por que devo aprender a trabalhar com Spring Data jpa?
+
+Aprender a trabalhar com Spring Data JPA pode ser benéfico por várias razões, incluindo:
+
+* Produtividade: Com o Spring Data JPA, é possível criar rapidamente um acesso a dados de alto desempenho, permitindo que você se concentre em desenvolver recursos de negócios valiosos em vez de escrever código repetitivo.
+
+* Flexibilidade: O Spring Data JPA é altamente personalizável e pode ser adaptado às necessidades específicas do seu projeto.
+
+* Gerenciamento de entidades: O Spring Data JPA permite que você gerencie facilmente as entidades do seu banco de dados usando uma interface de programação de aplicativos (API) simples e intuitiva.
+
+* Compatibilidade: O Spring Data JPA é compatível com vários bancos de dados relacionais e não relacionais, incluindo MySQL, PostgreSQL, Oracle e MongoDB.
+
+* Boa documentação: O Spring Data JPA é bem documentado, com uma vasta comunidade de usuários e suporte disponível, o que pode ajudar a resolver problemas comuns e aprender mais rapidamente.
+
+* Uso de padrões: O Spring Data JPA segue o padrão JPA (Java Persistence API), permitindo que você desenvolva aplicativos que possam ser facilmente portados para outras plataformas Java.
+
+Esses são apenas alguns dos motivos pelos quais aprender a trabalhar com Spring Data JPA pode ser valioso para o seu conjunto de habilidades. É uma ferramenta poderosa que pode ajudá-lo a criar aplicativos de alta qualidade e eficientes, economizando tempo e esforço no processo.
+
+## Por que devo aprender a trabalhar com Spring security?
+
+Aprender a trabalhar com Spring Security pode ser benéfico por várias razões, incluindo:
+
+* Segurança: Spring Security é uma estrutura de segurança poderosa que oferece várias camadas de proteção para seus aplicativos, incluindo autenticação, autorização e proteção contra ataques comuns, como cross-site scripting e SQL injection.
+
+* Integração fácil: O Spring Security é facilmente integrado com outros recursos do Spring Framework, como Spring MVC, Spring Boot e Spring Data.
+
+* Personalização: Com o Spring Security, é possível personalizar facilmente as configurações de segurança do seu aplicativo, incluindo a definição de permissões de usuário e configurações de login.
+
+* Controle de acesso: O Spring Security permite que você controle o acesso de usuários a recursos específicos do aplicativo, como páginas da web, arquivos e serviços RESTful.
+
+* Escalabilidade: O Spring Security é altamente escalável e pode lidar com aplicativos com um grande número de usuários simultâneos.
+
+* Suporte: O Spring Security tem uma comunidade ativa de desenvolvedores e usuários, com documentação e suporte disponíveis para ajudá-lo a solucionar problemas e aprender a usar a estrutura.
+
+Esses são apenas alguns dos motivos pelos quais aprender a trabalhar com o Spring Security pode ser valioso para o seu conjunto de habilidades. A segurança é uma consideração importante em muitos aplicativos e o Spring Security oferece uma solução abrangente e personalizável para proteger seu aplicativo e seus usuários.
+
 ## Estrutura do Projeto
 
 * config - configuração e beans manuais do projeto como Security e Open API - Swagger
