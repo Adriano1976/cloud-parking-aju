@@ -181,3 +181,13 @@ id: a46e42962ae547bdb4b7470543b5b6b6
 
 * <p dir="auto"><a href="https://github.com/Adriano1976">Adriano Santos</a></p>
 * <p dir="auto"><a href="https://api.whatsapp.com/send?phone=5579998960414" rel="nofollow">(79) 99896-0414</a></p>
+
+<hr>
+
+<div align="center">
+<br><p align="centre"><b>Contagem de visitantes</b></p>  
+<p align="center"><img align="center" src="https://profile-counter.glitch.me/{cloud-parking-aju}/count.svg" /></p> 
+<br>  
+
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=87CEFA&height=120&section=footer"/>**** 
+</div>
